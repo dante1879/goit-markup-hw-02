@@ -17,11 +17,11 @@
   visibility: hidden;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
@@ -32,11 +32,8 @@ button {
 
 body {
   color: var(--text-primary-grey);
-  background-color: var(--bg-main-white);
 
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
@@ -63,7 +60,8 @@ body {
   line-height: 1.19;
 }
 
-.header-nav {
+.site-nav,
+.header-contacts {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -152,6 +150,11 @@ body {
   color: var(--text-full-white);
 }
 
+.address-accent:hover,
+.address-accent:focus {
+  color: var(--primary-blue);
+}
+
 .footer-address {
   font-style: normal;
 }
@@ -191,4 +194,13 @@ body {
 .works p {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.our-works {
+  background-color: var(--bg-main-white);
+}
+
+.advantage,
+.what-we-do {
+  background-color: var(--bg-main-white);
 }
