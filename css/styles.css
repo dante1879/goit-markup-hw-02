@@ -41,10 +41,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header {
-  background-color: var(--bg-header-white);
-}
-
 .web-accent {
   color: var(--primary-blue);
 }
@@ -60,25 +56,22 @@ body {
   line-height: 1.19;
 }
 
-.site-nav,
-.header-contacts {
+.site-nav {
+  color: var(--text-primary-black);
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav a {
-  color: var(--text-primary-black);
-}
-
-.header-contacts a {
+a.header-contacts {
   color: var(--text-primary-grey);
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.header-contacts a:hover,
-.header-contacts a:focus {
+a.site-nav:hover,
+a.site-nav:focus,
+a.header-contacts:hover,
+a.header-contacts:focus {
   color: var(--primary-blue);
 }
 
@@ -106,10 +99,11 @@ body {
   line-height: 1.88;
 }
 
-.advantage h3 {
+.advantage-title {
   color: var(--text-primary-black);
 
   font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -125,7 +119,7 @@ body {
   background-color: var(--bg-secondary-white);
 }
 
-.team-members h3 {
+.team-member {
   color: var(--text-primary-black);
 
   font-weight: 500;
@@ -133,7 +127,7 @@ body {
   line-height: 1.19;
 }
 
-.team-members p {
+.team-role {
   font-size: 16px;
   line-height: 1.19;
 }
@@ -167,23 +161,27 @@ body {
   color: var(--primary-blue);
 }
 
-.filters {
+.pf-filter {
   color: var(--text-primary-black);
-  background-color: var(--bg-secondary-white);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  border-radius: 4px;
 }
 
-.filters .filter-accent,
-.filters button:hover,
-.filters button:focus {
+.filter-accent,
+.pf-filter:hover,
+.pf-filter:focus {
   color: var(--text-full-white);
   background-color: var(--primary-blue);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.works h2 {
+.works-title {
   color: var(--text-primary-black);
   font-weight: 700;
   font-size: 18px;
@@ -191,16 +189,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.works p {
+.works-field {
   font-size: 16px;
   line-height: 1.88;
-}
-
-.our-works {
-  background-color: var(--bg-main-white);
-}
-
-.advantage,
-.what-we-do {
-  background-color: var(--bg-main-white);
 }

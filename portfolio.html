@@ -16,37 +16,47 @@
   <body>
     <header class="header">
       <nav class="header-nav">
-        <a href="./index.html" class="main-logo"
+        <a href="./index.html" class="main-logo link"
           ><span class="web-accent">Web</span
           ><span class="studio-header">Studio</span></a
         >
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
+        <ul class="list">
+          <li><a href="./index.html" class="link site-nav">Студія</a></li>
           <li>
-            <a class="nav-selected link" href="./portfolio.html">Портфоліо</a>
+            <a class="nav-selected link site-nav" href="./portfolio.html"
+              >Портфоліо</a
+            >
           </li>
-          <li><a href="#" class="link">Контакти</a></li>
+          <li><a href="#" class="link site-nav">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="header-contacts list">
+      <ul class="list">
         <li>
-          <a href="mailto:info@devstudio.com" class="link"
+          <a
+            href="mailto:info@devstudio.com"
+            class="link site-nav header-contacts"
             >info@devstudio.com</a
           >
         </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li>
+          <a href="tel:+380961111111" class="link site-nav header-contacts"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
       <!-- main page-->
       <section class="our-works">
         <h1 class="hidden_main_tag">Портфоліо</h1>
-        <ul class="filters list">
-          <li><button class="filter-accent" type="button">Усі</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="list">
+          <li>
+            <button class="pf-filter filter-accent" type="button">Усі</button>
+          </li>
+          <li><button class="pf-filter" type="button">Веб-сайти</button></li>
+          <li><button class="pf-filter" type="button">Додатки</button></li>
+          <li><button class="pf-filter" type="button">Дизайн</button></li>
+          <li><button class="pf-filter" type="button">Маркетинг</button></li>
         </ul>
 
         <ul class="works list">
@@ -56,8 +66,8 @@
               alt="Приклад роботи 1"
               width="370"
             />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="works-title">Технокряк</h2>
+            <p class="works-field">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -65,8 +75,8 @@
               alt="Приклад роботи 2"
               width="370"
             />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
+            <p class="works-field">Дизайн</p>
           </li>
           <li>
             <img
@@ -74,8 +84,8 @@
               alt="Приклад роботи 3"
               width="370"
             />
-            <h2>Ресторан Seafood</h2>
-            <p>Додаток</p>
+            <h2 class="works-title">Ресторан Seafood</h2>
+            <p class="works-field">Додаток</p>
           </li>
           <li>
             <img
@@ -83,8 +93,8 @@
               alt="Приклад роботи 4"
               width="370"
             />
-            <h2>Проєкт Prime</h2>
-            <p>Маркетинг</p>
+            <h2 class="works-title">Проєкт Prime</h2>
+            <p class="works-field">Маркетинг</p>
           </li>
           <li>
             <img
@@ -92,8 +102,8 @@
               alt="Приклад роботи 5"
               width="370"
             />
-            <h2>Проєкт Boxes</h2>
-            <p>Додаток</p>
+            <h2 class="works-title">Проєкт Boxes</h2>
+            <p class="works-field">Додаток</p>
           </li>
           <li>
             <img
@@ -101,8 +111,8 @@
               alt="Приклад роботи 6"
               width="370"
             />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="works-title">Inspiration has no Borders</h2>
+            <p class="works-field">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -110,8 +120,8 @@
               alt="Приклад роботи 7"
               width="370"
             />
-            <h2>Видання Limited Edition</h2>
-            <p>Дизайн</p>
+            <h2 class="works-title">Видання Limited Edition</h2>
+            <p class="works-field">Дизайн</p>
           </li>
           <li>
             <img
@@ -119,8 +129,8 @@
               alt="Приклад роботи 8"
               width="370"
             />
-            <h2>Проєкт LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="works-title">Проєкт LAB</h2>
+            <p class="works-field">Маркетинг</p>
           </li>
           <li>
             <img
@@ -128,8 +138,8 @@
               alt="Приклад роботи 9"
               width="370"
             />
-            <h2>Growing Business</h2>
-            <p>Додаток</p>
+            <h2 class="works-title">Growing Business</h2>
+            <p class="works-field">Додаток</p>
           </li>
         </ul>
       </section>
@@ -152,15 +162,15 @@
             <a
               class="address-opacity address-accent link"
               href="mailto:info@devstudio.com"
-            ></a
-            >info@devstudio.com
+              >info@devstudio.com</a
+            >
           </li>
           <li>
             <a
               class="address-opacity address-accent link"
               href="tel:+380961111111"
-            ></a
-            >+38 096 111 11 11
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
